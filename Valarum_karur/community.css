@@ -1,0 +1,179 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Use a modern font for better aesthetics */
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h3, p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  
+  
+  .logo img{
+    width: 120px;
+    margin-right: 10px;
+    
+  }
+  
+  .menu{
+    margin: 0 400px;
+  }
+  
+  .menu a{
+    margin-left: 40px;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+    text-decoration: none;
+  } 
+  
+  .btn a button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  .btn a button:hover{
+    background-color: #3a9c42;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    header{
+      display: none;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    header{
+      display: none;
+    }
+  
+  }
+
+/* Header Banner */
+.header-banner {
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./about\ us\ banner\ 4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.header-banner h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-banner p {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* Community Section */
+.community-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.community-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px 30px;
+}
+
+.community-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.community-card img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    transition: transform 0.3s ease;
+}
+
+.community-card img:hover {
+    transform: scale(1.1);
+}
+
+.community-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.community-details p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Add responsive styles for mobile */
+@media (max-width: 768px) {
+    .header-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-banner p {
+        font-size: 1.2rem;
+    }
+
+    .community-card {
+        padding: 20px;
+    }
+    .header-banner{
+        background-image: none;
+        background-color: #424242;
+      }
+}
