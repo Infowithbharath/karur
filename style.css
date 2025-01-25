@@ -255,12 +255,12 @@ body {
 }
 
 .slide-content p {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     color: rgb(255, 149, 0);
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeIn 2s forwards;
-    margin-right: 550px;
+    margin-right: 180px;
 
 }
 
@@ -338,9 +338,7 @@ body {
         font-size: 1.5rem; /* Smaller font for headers on mobile */
     }
 
-    .slide-content p {
-        font-size:0.8rem; /* Smaller text for paragraphs */
-    }
+
 
     .slide-content a {
         font-size: 1rem; /* Button text size adjustment */
@@ -366,17 +364,22 @@ body {
     }
 
     .slide-content h2 {
-        font-size: 1rem; /* Even smaller font for very small screens */
-    }
-
-    .slide-content p {
-        font-size: 0.6rem; /* Adjust paragraph font size */
-    }
+        font-size: 0.9rem;
+        display: block;
+        align-items: center;
+        margin-right: 187px;
+        margin-top: 106px;
 
     .slide-content a {
         font-size: 0.9rem; /* Button text size adjustment */
         padding: 6px 12px;
         display: none;
+    }
+
+    .slide-content p{
+        font-size: 0.6rem;
+        margin-right: 187px;
+        
     }
 
     .prev,
