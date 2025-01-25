@@ -52,22 +52,7 @@ header{
     transform: scale(1.05);
   }
   
-  @media (max-width: 768px) {
-    header{
-      display: none;
-    }
-  
-  }
-  
-  @media (max-width: 480px) {
-    header{
-      display: none;
-    }
-    .header-banner{
-        background-image: none;
-        background-color: #424242;
-      }
-  }
+
 
 /* Header Banner */
 .header-banner {
@@ -92,6 +77,27 @@ header{
     color: #ddd;
     margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    header{
+      display: none;
+    }
+    .header-banner{
+        background-image: none;
+        background-color: #424242;
+      }
+  
+  }
+  
+  @media (max-width: 480px) {
+    header{
+      display: none;
+    }
+    .header-banner{
+        background-image: none;
+        background-color: #424242;
+      }
+  }
 
 /* Causes Section */
 .causes-section {
